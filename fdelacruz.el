@@ -1,5 +1,7 @@
 ;; DESCRIPTION: fdelacruz settings
 
+(add-to-list 'load-path dotfiles-dir)
+
 ;; Color Theme
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/color-theme/"))
 (require 'color-theme)
@@ -11,6 +13,10 @@
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
+
+;; Scala-mode
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/scala-mode"))
+(require 'scala-mode-auto)
 
 ;; Org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))

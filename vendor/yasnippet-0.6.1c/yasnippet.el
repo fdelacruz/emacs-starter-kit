@@ -515,7 +515,7 @@ snippet itself contains a condition that returns the symbol
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Internal variables
 
-(defvar yas/version "0.6.1b")
+(defvar yas/version "0.6.1c")
 
 (defvar yas/menu-table (make-hash-table)
   "A hash table of MAJOR-MODE symbols to menu keymaps.")
