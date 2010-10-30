@@ -27,6 +27,9 @@
 (global-font-lock-mode 1)                     ; for all buffers
 (add-hook 'org-mode-hook 'turn-on-font-lock)  ; Org buffers only
 
+;; Tramp-mode
+(setq tramp-default-method "ssh")
+
 ;; Stop creating those backup~ files 
 (setq make-backup-files nil) 
 
