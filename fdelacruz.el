@@ -61,3 +61,6 @@
 ;; Macros
 (fset 'TiJ4CodeFix
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("version1.56version1.56J2SE5f61.5ff6" 0 "%d")) arg)))
+
+;; nXhtml
+(load "~/.emacs.d/vendor/nxhtml/autostart")
