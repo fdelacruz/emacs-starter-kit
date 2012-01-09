@@ -75,3 +75,9 @@
   (eval-after-load "tramp-compat"
     '(add-to-list 'byte-compile-not-obsolete-vars
                   'font-lock-beginning-of-syntax-function)))
+;; Auto-Complete-mode
+(add-to-list 'load-path "~/.emacs.d/vendor/auto-complete")
+(require 'auto-complete-config)
+(ac-config-default)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/vendor/auto-complete/ac-dict")
+  
