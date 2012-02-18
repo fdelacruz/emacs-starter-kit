@@ -18,6 +18,13 @@
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/scala-mode"))
 (require 'scala-mode-auto)
 
+(setq yas/my-directory "~/.emacs.d/vendor/scala-mode/contrib/yasnippet/snippets")
+  (yas/load-directory yas/my-directory)
+
+(add-hook 'scala-mode-hook
+          '(lambda ()
+             (yas/minor-mode-on)))
+
 ;; Org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
