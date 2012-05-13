@@ -55,6 +55,7 @@
                              (file-name-sans-extension file)
                              (or (getenv "CFLAGS") "-Wall -gstabs")
                              file))))))
+
 ;; M-x compile for java files
 (add-hook 'java-mode-hook
           (lambda ()
@@ -69,22 +70,11 @@
 (fset 'TiJ4CodeFix
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("version1.56version1.56J2SE5f61.5ff6" 0 "%d")) arg)))
 
-;; nXhtml
-(load "~/.emacs.d/vendor/nxhtml/autostart")
+;; nXhtml (beta 2.09, revision 834)
+(load "~/.emacs.d/vendor/~nxhtml/nxhtml/main/autostart")
 
-;; Mumamo pesty warning fix
-(when (and (equal emacs-major-version 23)
-           (equal emacs-minor-version 3))
-  (eval-after-load "bytecomp"
-    '(add-to-list 'byte-compile-not-obsolete-vars
-                  'font-lock-beginning-of-syntax-function))
-  ;; tramp-compat.el clobbers this variable!
-  (eval-after-load "tramp-compat"
-    '(add-to-list 'byte-compile-not-obsolete-vars
-                  'font-lock-beginning-of-syntax-function)))
 ;; Auto-Complete-mode
 (add-to-list 'load-path "~/.emacs.d/vendor/auto-complete")
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/vendor/auto-complete/ac-dict")
-  
