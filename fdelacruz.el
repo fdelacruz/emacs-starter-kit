@@ -78,3 +78,8 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/vendor/auto-complete/ac-dict")
+
+;; python-mode.el
+(add-to-list 'load-path "~/.emacs.d/vendor/python-mode.el")
+(setq py-install-directory "~/.emacs.d/vendor/python-mode.el")
+(require 'python-mode)
