@@ -72,9 +72,11 @@
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("version1.56version1.56J2SE5f61.5ff6" 0 "%d")) arg)))
 
 ;; nXhtml (beta 2.09, revision 834)
-(load "~/.emacs.d/vendor/~nxhtml/nxhtml/main/autostart")
- 
-                               
+(add-hook 'html-mode-hook (lambda ()
+(progn
+  (load-file "~/.emacs.d/vendor/~nxhtml/nxhtml/main/autostart.el")
+))) 
+                                
 ;; Auto-Complete-mode
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/auto-complete"))
 (require 'auto-complete-config)
