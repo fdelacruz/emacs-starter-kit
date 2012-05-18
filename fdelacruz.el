@@ -106,10 +106,6 @@
 
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
-
-
-
-
-
-
-
+;; Magit
+(add-to-list 'load-path "~/.emacs.d/vendor/magit/")
+(require 'magit)
