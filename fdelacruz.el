@@ -2,6 +2,9 @@
 
 (add-to-list 'load-path dotfiles-dir)
 
+;; Don't make backup~ files 
+(setq make-backup-files nil) 
+
 ;; Color Theme
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/color-theme/"))
 (require 'color-theme)
@@ -37,8 +40,6 @@
 ;; Tramp-mode
 (setq tramp-default-method "ssh")
 
-;; Stop creating those backup~ files 
-(setq make-backup-files nil) 
 
 ;; Invoke M-x without the Alt key
 (global-set-key "\C-x\C-m" 'execute-extended-command)
@@ -72,22 +73,22 @@
 
 ;; nXhtml (beta 2.09, revision 834)
 (load "~/.emacs.d/vendor/~nxhtml/nxhtml/main/autostart")
-
+ 
+                               
 ;; Auto-Complete-mode
-(add-to-list 'load-path "~/.emacs.d/vendor/auto-complete")
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/auto-complete"))
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/vendor/auto-complete/ac-dict")
 
 ;; python-mode.el
-(add-to-list 'load-path "~/.emacs.d/vendor/python-mode.el")
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/python-mode.el"))
 (setq py-install-directory "~/.emacs.d/vendor/python-mode.el")
 (require 'python-mode)
   
 ;; Python sintax/error highlighting 
-(setq flymake-log-level 2) ;;Controls logging output
-
-(add-to-list 'load-path "~/.emacs.d/vendor/flymake-cursor.el")
+(setq flymake-log-level 2)          
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/flymake-cursor.el"))
 
 (require 'flymake-cursor)
 (global-set-key [f4] 'flymake-goto-next-error)
@@ -107,5 +108,5 @@
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;; Magit
-(add-to-list 'load-path "~/.emacs.d/vendor/magit/")
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/magit"))
 (require 'magit)
