@@ -1,4 +1,4 @@
-(setq flymake-log-level 1)
+;(setq flymake-log-level 1)
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/flymake-cursor.el"))
 
 (require 'flymake-cursor)
