@@ -5,11 +5,12 @@
 ;; Don't make backup~ files 
 (setq make-backup-files nil) 
 
-;; Color Theme
-(add-to-list 'load-path (concat dotfiles-dir "/vendor/color-theme/"))
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-dark-laptop)
+;; Color-theme ONLY when in Emacs.app
+(when window-system
+  (add-to-list 'load-path (concat dotfiles-dir "/vendor/color-theme/"))
+  (require 'color-theme)
+  (color-theme-initialize)
+  (color-theme-dark-laptop))
 
 ;; Snippets
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/yasnippet"))
