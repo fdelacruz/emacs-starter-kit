@@ -3,7 +3,7 @@
 ;;; Code:
 
 
-;;;### (autoloads (chart-test-it-all) "chart" "chart.el" (20236 56535))
+;;;### (autoloads (chart-test-it-all) "chart" "chart.el" (20419 54722))
 ;;; Generated autoloads from chart.el
 
 (autoload 'chart-test-it-all "chart" "\
@@ -15,7 +15,7 @@ Test out various charting features.
 
 ;;;### (autoloads (data-debug-show data-debug-insert-object-button
 ;;;;;;  data-debug-insert-object-slots) "eieio-datadebug" "eieio-datadebug.el"
-;;;;;;  (20236 56535))
+;;;;;;  (20419 54722))
 ;;; Generated autoloads from eieio-datadebug.el
 
 (autoload 'data-debug-insert-object-slots "eieio-datadebug" "\
@@ -40,7 +40,7 @@ Run ddebug against any EIEIO object OBJ
 
 ;;;### (autoloads (eieio-describe-generic eieio-build-class-alist
 ;;;;;;  eieio-describe-constructor eieio-describe-class eieio-browse)
-;;;;;;  "eieio-opt" "eieio-opt.el" (20236 56535))
+;;;;;;  "eieio-opt" "eieio-opt.el" (20419 54722))
 ;;; Generated autoloads from eieio-opt.el
 
 (autoload 'eieio-browse "eieio-opt" "\
@@ -89,7 +89,7 @@ Also extracts information about all methods specific to this generic.
 ;;;***
 
 ;;;### (autoloads (eieio-perftest-onemethodcall eieio-perftest-methodcall)
-;;;;;;  "eieio-perftest" "eieio-perftest.el" (20236 56535))
+;;;;;;  "eieio-perftest" "eieio-perftest.el" (20419 54722))
 ;;; Generated autoloads from eieio-perftest.el
 
 (autoload 'eieio-perftest-methodcall "eieio-perftest" "\
@@ -105,7 +105,7 @@ Test and time performance of method invocation.
 ;;;***
 
 ;;;### (autoloads (enable-visual-studio-bookmarks) "linemark" "linemark.el"
-;;;;;;  (20236 56535))
+;;;;;;  (20419 54722))
 ;;; Generated autoloads from linemark.el
 
 (autoload 'enable-visual-studio-bookmarks "linemark" "\
@@ -121,7 +121,7 @@ Bind the viss bookmark functions to F2 related keys.
 ;;;***
 
 ;;;### (autoloads (lmcompile-do-highlight) "lmcompile" "lmcompile.el"
-;;;;;;  (20236 56535))
+;;;;;;  (20419 54722))
 ;;; Generated autoloads from lmcompile.el
 
 (autoload 'lmcompile-do-highlight "lmcompile" "\
@@ -132,10 +132,17 @@ Works on grep, compile, or other type mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("eieio-base.el" "eieio-comp.el" "eieio-custom.el"
-;;;;;;  "eieio-doc.el" "eieio-load.el" "eieio-speedbar.el" "eieio-test-methodinvoke.el"
-;;;;;;  "eieio-test-mro.el" "eieio-tests.el" "eieio.el") (20419 51880
-;;;;;;  977145))
+;;;### (autoloads nil nil ("../../cedet/eieio/chart.el" "../../cedet/eieio/eieio-base.el"
+;;;;;;  "../../cedet/eieio/eieio-comp.el" "../../cedet/eieio/eieio-custom.el"
+;;;;;;  "../../cedet/eieio/eieio-datadebug.el" "../../cedet/eieio/eieio-doc.el"
+;;;;;;  "../../cedet/eieio/eieio-load.el" "../../cedet/eieio/eieio-loaddefs.el"
+;;;;;;  "../../cedet/eieio/eieio-opt.el" "../../cedet/eieio/eieio-perftest.el"
+;;;;;;  "../../cedet/eieio/eieio-speedbar.el" "../../cedet/eieio/eieio-test-methodinvoke.el"
+;;;;;;  "../../cedet/eieio/eieio-test-mro.el" "../../cedet/eieio/eieio-tests.el"
+;;;;;;  "../../cedet/eieio/eieio.el" "../../cedet/eieio/linemark.el"
+;;;;;;  "../../cedet/eieio/lmcompile.el" "chart.el" "eieio-datadebug.el"
+;;;;;;  "eieio-opt.el" "eieio-perftest.el" "linemark.el" "lmcompile.el")
+;;;;;;  (20419 54783 514845))
 
 ;;;***
 

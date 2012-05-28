@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (eassist-list-methods eassist-switch-h-cpp) "eassist"
-;;;;;;  "eassist.el" (20236 56536))
+;;;;;;  "eassist.el" (20419 54722))
 ;;; Generated autoloads from eassist.el
 
 (defvar eassist-header-switches '(("h" "cpp" "cc" "c") ("hpp" "cpp" "cc") ("cpp" "h" "hpp") ("c" "h") ("C" "H") ("H" "C" "CPP" "CC") ("cc" "h" "hpp")) "\
@@ -28,7 +28,7 @@ This function is recommended to be bound to some convinient hotkey.
 
 ;;;***
 
-;;;### (autoloads nil "ede-gnustep" "ede-gnustep.el" (20236 56536))
+;;;### (autoloads nil "ede-gnustep" "ede-gnustep.el" (20419 54722))
 ;;; Generated autoloads from ede-gnustep.el
 
 (add-to-list 'ede-project-class-files (ede-project-autoload "edegnustep" :name "GNUstep-Make" :file 'ede-gnustep :proj-file "ProjStep.ede" :load-type 'ede-step-load :class-sym 'ede-step-project) t)
@@ -43,7 +43,7 @@ This function is recommended to be bound to some convinient hotkey.
 
 ;;;### (autoloads (semantic-tag-folding-mode global-semantic-tag-folding-mode
 ;;;;;;  global-semantic-tag-folding-mode) "semantic-tag-folding"
-;;;;;;  "semantic-tag-folding.el" (20236 56536))
+;;;;;;  "semantic-tag-folding.el" (20419 54722))
 ;;; Generated autoloads from semantic-tag-folding.el
 
 (defvar global-semantic-tag-folding-mode nil "\
@@ -74,7 +74,7 @@ minor mode is enabled.
 ;;;***
 
 ;;;### (autoloads (wisent-csharp-default-setup) "wisent-csharp" "wisent-csharp.el"
-;;;;;;  (20236 56536))
+;;;;;;  (20419 54722))
 ;;; Generated autoloads from wisent-csharp.el
 
 (autoload 'wisent-csharp-default-setup "wisent-csharp" "\
@@ -86,8 +86,14 @@ Not documented
 
 ;;;***
 
+;;;### (autoloads nil nil ("cedet-contrib-load.el" "cedet-contrib.el"
+;;;;;;  "semantic-ectag-scala.el" "wisent-csharp-wy.el" "wisent-php-wy.el"
+;;;;;;  "wisent-ruby-wy.el" "wisent-ruby.el") (20419 51941 630406))
+
+;;;***
+
 ;;;### (autoloads (wisent-php-default-setup) "wisent-php" "wisent-php.el"
-;;;;;;  (20236 56536))
+;;;;;;  (20419 54722))
 ;;; Generated autoloads from wisent-php.el
 
 (autoload 'wisent-php-default-setup "wisent-php" "\
@@ -100,9 +106,15 @@ Use the alternate LALR(1) parser.
 
 ;;;***
 
-;;;### (autoloads nil nil ("cedet-contrib-load.el" "cedet-contrib.el"
-;;;;;;  "semantic-ectag-scala.el" "wisent-csharp-wy.el" "wisent-php-wy.el"
-;;;;;;  "wisent-ruby-wy.el" "wisent-ruby.el") (20419 51941 630406))
+;;;### (autoloads nil nil ("../../cedet/contrib/cedet-contrib-load.el"
+;;;;;;  "../../cedet/contrib/cedet-contrib.el" "../../cedet/contrib/contrib-loaddefs.el"
+;;;;;;  "../../cedet/contrib/eassist.el" "../../cedet/contrib/ede-gnustep.el"
+;;;;;;  "../../cedet/contrib/semantic-ectag-scala.el" "../../cedet/contrib/semantic-tag-folding.el"
+;;;;;;  "../../cedet/contrib/wisent-csharp-wy.el" "../../cedet/contrib/wisent-csharp.el"
+;;;;;;  "../../cedet/contrib/wisent-php-wy.el" "../../cedet/contrib/wisent-php.el"
+;;;;;;  "../../cedet/contrib/wisent-ruby-wy.el" "../../cedet/contrib/wisent-ruby.el"
+;;;;;;  "eassist.el" "ede-gnustep.el" "semantic-tag-folding.el" "wisent-csharp.el"
+;;;;;;  "wisent-php.el") (20419 54855 752459))
 
 ;;;***
 
