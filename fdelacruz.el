@@ -98,3 +98,21 @@
 ;; Magit
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/magit"))
 (require 'magit)
+
+;; Jedi and it's dependencies..
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/emacs-jedi"))
+(setq jedi:setup-keys t)
+(autoload 'jedi:setup "jedi" nil t)
+(add-hook 'python-mode-hook 'jedi:setup)
+
+;; deferred
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/emacs-deferred"))
+
+;; ctable
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/emacs-ctable"))
+
+;; EPC
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/emacs-epc"))
+(require 'epc)
+
+
